@@ -4,22 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Operations</title>
-
+  <title>Beauty of Angular </title>
 </head>
 <body>
-  <h1>Enter first number:</h1>
-  <input type="number" placeholder="put a num" [(ngModel)]="firstNum">
-  <br>
-  <h1>Enter second number:</h1>
-  <input type="number" placeholder="put another num" [(ngModel)]="secondNum">
-  <br>
-  <h1>Result:</h1>
-  <input type="number" [(ngModel)]="result">
-  <br>
-  <button (click)="add()">+</button>
-  <button (click)="sub()">-</button>
-  <button (click)="prod()">*</button>
-  <button (click)="div()">/</button>
+    <img [src]="logo"/>
+    <h1>JobTitle:{{jobTitle}}</h1>
+    <br>
+    <h2>salary:{{salary}}</h2>
+    <br>
+    <h3>annualSalary:{{getAnnualSalary()}}</h3>
+    <br>
+    <h3>Enter user name:</h3>
+    <input type="text" placeholder="type your name"[(ngModel)]="userName">
+    <button (click)="greetUser()">Greet</button>
+    
 </body>
 </html>

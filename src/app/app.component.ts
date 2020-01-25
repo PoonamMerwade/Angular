@@ -6,30 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  private firstNum:number=null;
-  private secondNum:number=null;
-  private result:number=null;
+  private jobTitle:string=null;
+  private salary:number=null;
+  private annualSalary:number=null;
+  private logo:string=null;
+  private userName:string=null;
 
-  public constructor(){
-    this.firstNum=this.firstNum;
-    this.secondNum=this.secondNum;
+  constructor(){
+    this.jobTitle="trainer";
+    this.salary=50000;
+    this.logo="assets/sudeep1.jpg";
   }
-
-  public add():number{
-    this.result= this.firstNum+this.secondNum;
-    return this.result;
-
+  public getAnnualSalary():number{
+    this.annualSalary=this.salary*12;
+    return this.annualSalary;
   }
-  public sub():number{
-    this.result=this.firstNum-this.secondNum;
-    return this.result;
-  }
-  public prod():number{
-    this.result=this.firstNum*this.secondNum;
-    return this.result;
-  }
-  public div():number{
-    this.result=this.firstNum/this.secondNum;
-    return this.result;
+  public greetUser():void{
+    this.userName="Ms"+this.userName;
+    alert("welcome"+this.userName);
   }
 }
