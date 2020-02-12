@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Beauty of Angular </title>
-</head>
-<body>
-    <img [src]="logo"/>
-    <h1>JobTitle:{{jobTitle}}</h1>
-    <br>
-    <h2>salary:{{salary}}</h2>
-    <br>
-    <h3>annualSalary:{{getAnnualSalary()}}</h3>
-    <br>
-    <h3>Enter user name:</h3>
-    <input type="text" placeholder="type your name"[(ngModel)]="userName">
-    <button (click)="greetUser()">Greet</button>
-    
-</body>
-</html>
+<app-header></app-header>
+<app-nav-bar></app-nav-bar>
+<router-outlet></router-outlet>

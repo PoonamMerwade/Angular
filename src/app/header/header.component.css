@@ -1,0 +1,13 @@
+header{
+    background-color:blue;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 18px;
+}
+header>div>img{
+    width: 100px;
+   
+}
+header>div>img,header>div>h2{
+    display: inline-block;
+}

@@ -1,13 +1,4 @@
-h1{
-    color: blue;
-}
-h2{
-    color: blueviolet;
-    text-align: end;
-}
-h3{
-    color:red;
-}
-img{
-    width:100px;
+header{
+    background-color: aqua;
+    
 }
